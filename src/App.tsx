@@ -1,12 +1,16 @@
-import React from "react";
-import "./App.css";
-import MainLayout from "./components/Chats/MainLayout/MainLayout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import { routes } from "./routes";
 
 function App() {
   return (
-    <div>
-      <MainLayout />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          {routes}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
