@@ -2,7 +2,6 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import { user } from "../assets/data/Data";
 import Sidebar from "../components/Sidebar";
-import sizeConfigs from "../configs/sizeConfigs";
 
 function MainLayout() {
   const theme = useTheme();
@@ -43,7 +42,7 @@ function MainLayout() {
             component="main"
             sx={{
               p: 3,
-              width: `calc(100% - ${sizeConfigs.sidebar.width})`,
+              width: "calc(100% - 11rem)",
             }}
           >
             <Outlet />

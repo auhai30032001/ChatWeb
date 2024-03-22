@@ -267,18 +267,7 @@ function Conversations({ data, setOpen }: ChatDataProps) {
           </Grid>
         </>
       ) : (
-        <Box sx={{ textAlign: "center" }}>
-          <img
-            src={
-              "https://static-00.iconduck.com/assets.00/404-page-not-found-illustration-512x249-ju1c9yxg.png"
-            }
-            loading="lazy"
-            width="65%"
-          />
-          <Typography variant="h3" color="#9e9e9e">
-            SELECT THE CHAT
-          </Typography>
-        </Box>
+        <></>
       )}
     </>
   );

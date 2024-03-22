@@ -10,7 +10,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import StyledOnlineBadge from "../../components/OnlineBagde";
+
 import { ChatData } from "../../models/chat";
 
 interface ChatDataProps {
@@ -45,7 +45,7 @@ function ChatItem({ data, setChat, setOpen }: ChatDataProps) {
           disablePadding
           key={index}
           sx={{
-            mb: 1,
+            mb: 3,
             pr: 1,
           }}
         >
@@ -59,17 +59,13 @@ function ChatItem({ data, setChat, setOpen }: ChatDataProps) {
                 "& .MuiListItemIcon-root": {
                   minWidth: 0,
                 },
+                "&:hover": {
+                  transform: "scale 1.5",
+                },
               }}
             >
-              <ListItemIcon>
-                <StyledOnlineBadge
-                  overlap="circular"
-                  anchorOrigin={{ vertical: "top", horizontal: "right" }}
-                  variant="dot"
-                >
-                  <Avatar src={item.avatar} sx={{ width: 45, height: 45 }} />
-                </StyledOnlineBadge>
-              </ListItemIcon>
+              <Avatar src={item.avatar} sx={{ width: 45, height: 45 }} />
+
               <ListItemText sx={{ ml: 2 }}>
                 <Typography variant="body1" fontWeight="bold">
                   {item.name}
@@ -129,13 +125,7 @@ function ChatItem({ data, setChat, setOpen }: ChatDataProps) {
               }}
             >
               <ListItemIcon>
-                <StyledOnlineBadge
-                  overlap="circular"
-                  anchorOrigin={{ vertical: "top", horizontal: "right" }}
-                  variant="dot"
-                >
-                  <Avatar src={item.avatar} sx={{ width: 45, height: 45 }} />
-                </StyledOnlineBadge>
+                <Avatar src={item.avatar} sx={{ width: 45, height: 45 }} />
               </ListItemIcon>
               <ListItemText sx={{ ml: 2 }}>
                 <Typography variant="body1" fontWeight="bold">

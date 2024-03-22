@@ -14,7 +14,6 @@ function ChatListPage({ data, setChat, setOpen }: ChatDataProps) {
   return (
     <>
       <Paper
-        variant="outlined"
         sx={{
           display: "flex",
           alignItems: "center",
@@ -30,7 +29,7 @@ function ChatListPage({ data, setChat, setOpen }: ChatDataProps) {
       </Paper>
       <Divider sx={{ mr: "1.25rem" }} />
       <List>
-        <Scrollbar sx={{ maxHeight: "33rem", mr: "0.625rem" }}>
+        <Scrollbar sx={{ maxHeight: "33rem", mr: "0.825rem" }}>
           <ChatItem data={data} setChat={setChat} setOpen={setOpen} />
         </Scrollbar>
       </List>

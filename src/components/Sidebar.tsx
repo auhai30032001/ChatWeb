@@ -14,7 +14,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import sizeConfigs from "../configs/sizeConfigs";
+
 import colorConfigs from "../configs/colorConfigs";
 import routesConfig from "../routes/Routes";
 import { User } from "../models/chat";
@@ -65,10 +65,10 @@ function Sidebar({ data }: UserProps) {
             <Drawer
               variant="permanent"
               sx={{
-                width: sizeConfigs.sidebar.width,
+                width: "11rem",
                 flexShrink: 0,
                 "& .MuiDrawer-paper": {
-                  width: sizeConfigs.sidebar.width,
+                  width: "12rem",
                   boxSizing: "border-box",
                   borderRight: "0px",
                   backgroundColor: colorConfigs.sidebar.bg,
@@ -146,10 +146,10 @@ function Sidebar({ data }: UserProps) {
         <Drawer
           variant="permanent"
           sx={{
-            width: sizeConfigs.sidebar.width,
+            width: "12rem",
             flexShrink: 0,
             "& .MuiDrawer-paper": {
-              width: sizeConfigs.sidebar.width,
+              width: "12rem",
               boxSizing: "border-box",
               borderRight: "0px",
               backgroundColor: colorConfigs.sidebar.bg,

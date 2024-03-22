@@ -9,7 +9,7 @@ const colorConfigs = {
   },
   chatpage: {
     scrollbar: "#c1c1c1",
-    bgMe: "#00bfff",
+    bgMe: "#1ac6ff",
     colorMe: "#fff",
     bgYou: "#e0e0e0",
     colorYou: "#000",
