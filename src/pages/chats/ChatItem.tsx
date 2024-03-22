@@ -102,7 +102,7 @@ function ChatItem({ data, setChat, setOpen }: ChatDataProps) {
                 <Badge
                   badgeContent={
                     item.detailChat.filter((item) => {
-                      return item.newContent == true && item.type === false;
+                      return item.newContent === true && item.type === false;
                     }).length
                   }
                   sx={{

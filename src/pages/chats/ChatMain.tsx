@@ -20,16 +20,18 @@ function ChatMain({ data }: ChatDataProps) {
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
   const [open, setOpen] = useState(false);
   return (
-    <Box sx={{ mx: 5 }}>
+    <Box sx={{ mx: 1 }}>
       {isMatch ? (
         <Stack spacing={2}>
           <Grid container>
             <Grid item xs={12}>
-              <Typography variant="h4">Chat</Typography>
+              <Typography variant="h1" fontWeight="bold">
+                Chat
+              </Typography>
             </Grid>
           </Grid>
           {open !== true ? (
-            <Grid container px={1}>
+            <Grid container px={5}>
               <Grid item xs={12}>
                 <ChatList data={data} setChat={setChat} setOpen={setOpen} />
               </Grid>
@@ -46,7 +48,7 @@ function ChatMain({ data }: ChatDataProps) {
         <Stack spacing={2}>
           <Grid container>
             <Grid item xs={12}>
-              <Typography variant="h4">Chat</Typography>
+              <Typography variant="h3">Chat</Typography>
             </Grid>
           </Grid>
           <Grid container px={1}>

@@ -11,13 +11,13 @@ function ChatTop() {
         justifyContent: "flex-end",
       }}
     >
-      <Typography sx={{ minWidth: 90 }}>Status: Sale</Typography>
+      <Typography sx={{ minWidth: 60 }}>Status: Sale</Typography>
       <IconButton size="small">
         <FontAwesomeIcon icon={faCaretDown} />
       </IconButton>
       <Tooltip title="">
         <IconButton size="small" sx={{ mx: 6 }}>
-          <Badge badgeContent={0} color="error">
+          <Badge badgeContent={5} color="error">
             <FontAwesomeIcon icon={faBell} />
           </Badge>
         </IconButton>

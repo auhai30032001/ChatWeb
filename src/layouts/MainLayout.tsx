@@ -34,13 +34,7 @@ function MainLayout() {
         </>
       ) : (
         <>
-          <Box
-            component="nav"
-            sx={{
-              width: sizeConfigs.sidebar.width,
-              flexShrink: 0,
-            }}
-          >
+          <Box component="nav">
             {user.map((item, index) => (
               <Sidebar data={item} key={index} />
             ))}

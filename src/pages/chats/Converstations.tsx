@@ -36,6 +36,7 @@ interface ChatDataProps {
 
 const getDataFromLS = () => {
   const data = localStorage.getItem("chat");
+
   if (data) {
     return JSON.parse(data);
   } else {
@@ -65,6 +66,7 @@ function Conversations({ data, setOpen }: ChatDataProps) {
 
   useEffect(() => {
     localStorage.setItem("chat", JSON.stringify(chats));
+    //localStorage.removeItem("chat");
   }, [chats]);
 
   return (
@@ -88,10 +90,10 @@ function Conversations({ data, setOpen }: ChatDataProps) {
                   <IconButton size="small" onClick={handleClickOpen}>
                     <FontAwesomeIcon icon={faAngleLeft} fontSize={16} />
                   </IconButton>
-                  {data.nickName}
+                  Goldcoast
                 </>
               ) : (
-                <>{data.nickName}</>
+                <>Goldcoast</>
               )}
             </Typography>
             <Typography variant="body2" fontWeight="bold" color="#9e9e9e">

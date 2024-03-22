@@ -1,8 +1,6 @@
-import { width } from "@mui/system";
-
 const sizeConfigs = {
   sidebar: {
-    width: "15rem",
+    width: "11rem",
   },
 };
 

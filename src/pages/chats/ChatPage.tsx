@@ -5,6 +5,7 @@ import { user } from "../../assets/data/Data";
 
 function ChatPage() {
   const chatData = user.map((item) => item.chatData);
+  //console.log(chatData);
   return (
     <Box
       sx={{
